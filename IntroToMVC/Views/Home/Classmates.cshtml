@@ -1,0 +1,58 @@
+﻿@model IntroToMVC.Models.Classmate
+
+@{
+    ViewBag.Title = "Classmates";
+}
+
+<h2>Classmates</h2>
+
+<div>
+    <h4>Classmate</h4>
+    <hr />
+   
+    <dl class="dl-horizontal">
+        
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HairColor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HairColor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Height)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Height)
+        </dd>
+        <div>
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                @for (var item in Model)
+                {
+
+                }
+            </table>
+        </div>
+        
+    </dl>
+</div>
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |*@
+    @Html.ActionLink("Back to List", "Index")
+</p>
