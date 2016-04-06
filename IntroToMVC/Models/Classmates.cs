@@ -6,7 +6,7 @@ using IntroToMVC.Controllers;
 
 namespace IntroToMVC.Models
 {
-    public class Classmate : HomeController
+    public class Classmate
     {
         public Classmate(string name, string hairColor, double height)
         {
@@ -14,7 +14,12 @@ namespace IntroToMVC.Models
             HairColor = hairColor;
             Height = height;
         }
-        //public int Id { get; set; }
+
+        public Classmate()
+        {
+        }
+
+        public int Id { get; set; }
         public string Name { get; set; }
         public string HairColor { get; set; }
         public double Height { get; set; }

@@ -32,6 +32,12 @@ namespace IntroToMVC.Controllers
         {
             List<Classmate> classmates = new List<Classmate>();
             {
+                //new Classmate() {Name = "Seth", HairColor = "Black", Height = 5.10};
+                //new Classmate() {Name = "Zach", HairColor = "Blonde", Height = 5.9};
+                //new Classmate() {Name = "Brian", HairColor = "Black", Height = 5.7};
+                //new Classmate() {Name = "Kate", HairColor = "Brown", Height = 5.6};
+                //new Classmate() {Name = "Kevin", HairColor = "Black", Height = 5.7};
+                //new Classmate() {Name = "Trey", HairColor = "Black", Height = 5.6};
                 new Classmate("Seth", "Black", 5.10);
                 new Classmate("Zach", "Blonde", 5.9);
                 new Classmate("Brian", "Black", 5.7);
@@ -39,6 +45,8 @@ namespace IntroToMVC.Controllers
                 new Classmate("Kevin", "Black", 5.7);
                 new Classmate("Trey", "Black", 5.6);
             }
+            ;
+
             return View();
 
         }
